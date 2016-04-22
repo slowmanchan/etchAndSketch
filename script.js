@@ -1,3 +1,4 @@
+/* main */
 $(document).ready(function() {
   
   var grid = prompt("Enter Grid Size");
@@ -14,7 +15,7 @@ $(document).ready(function() {
        
   });
 });
-
+/* Grid Generator */
 function makeGrid (grid) {
   for (i = 1; i <= grid; i++) {
     $('<tr></tr>').appendTo('table');
@@ -24,5 +25,15 @@ function makeGrid (grid) {
   }
   $('td').mouseenter(function() {
     $(this).addClass('highlight');
+    $(this).css('background-color', randomColors);
   });
 }
+/* random color generator */
+var randomColors = function randomColors() {
+  var r = Math.floor(Math.random() * 256);
+  var g = Math.floor(Math.random() * 256);
+  var b = Math.floor(Math.random() * 256);
+  return "rgb(" + r + ',' + g + ',' + b + ")";
+}
+
+
