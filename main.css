@@ -1,0 +1,23 @@
+table {
+  height: 100%;
+  width: 50%;
+  border-collapse: collapse;
+}
+td {
+  border: 0.1px inset black;
+  
+}
+.highlight {
+	background-color: black;
+}
+#clear { 
+  height: 50px;
+  width: 600px;
+  background-color: white;
+}
+.container {
+	position: absolute;
+	top: 60px;
+	bottom: 0;
+	width: 100%;
+}
