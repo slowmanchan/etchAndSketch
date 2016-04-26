@@ -1,18 +1,16 @@
 /* main */
 $(document).ready(function() {
-  
-  var grid = prompt("Enter Grid Size");
-  
-  makeGrid(grid);
+
+  makeGrid(16);
 
   $('#clear').click(function() {
-	
+
 	var grid = prompt("Enter Grid Size");
     $('td').removeClass('highlight');
 	$('td').remove();
 	$('tr').remove();
     makeGrid(grid);
-       
+
   });
 });
 /* Grid Generator */
@@ -35,5 +33,3 @@ var randomColors = function randomColors() {
   var b = Math.floor(Math.random() * 256);
   return "rgb(" + r + ',' + g + ',' + b + ")";
 }
-
-
