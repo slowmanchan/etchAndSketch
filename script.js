@@ -2,6 +2,7 @@
 $(document).ready(function() {
 
   var grid = prompt("Enter Grid Size");
+  makeGrid(grid);
   
   $('#clear').click(function() {
 
