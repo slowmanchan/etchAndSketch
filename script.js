@@ -1,15 +1,15 @@
 /* main */
 $(document).ready(function() {
 
-  makeGrid(16);
-
+  var grid = prompt("Enter Grid Size");
+  
   $('#clear').click(function() {
 
 	var grid = prompt("Enter Grid Size");
-    $('td').removeClass('highlight');
+        $('td').removeClass('highlight');
 	$('td').remove();
 	$('tr').remove();
-    makeGrid(grid);
+        makeGrid(grid);
 
   });
 });
